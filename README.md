@@ -8,8 +8,8 @@ This is a development preview. Garage fabrication, walking, village gameplay and
 
 | Download | SHA-256 |
 |---|---|
-| [Windows launcher/bootstrap ZIP](https://github.com/taavipa/lemows-downloads/releases/download/updater-bootstrap-v1/lemows-update-win-x64.zip) | `83d06a2378cb9cc78783de12982a3dda0c507e96a1c19c2be48a2113323f2ac9` |
-| [Linux server/bootstrap ZIP](https://github.com/taavipa/lemows-downloads/releases/download/updater-bootstrap-v1/lemows-update-linux-x64.zip) | `f0700f1965049d9032f28826b164a54fe41af83bee13bf0d7a049a62e1df754c` |
+| [Windows launcher/bootstrap ZIP](https://github.com/taavipa/lemows-downloads/releases/download/updater-bootstrap-v2/lemows-update-win-x64.zip) | `de7ab9068ec9f0540c5e7f078e49df1bc256c40fd25e42c30c5b50dcc0924e82` |
+| [Linux server/bootstrap ZIP](https://github.com/taavipa/lemows-downloads/releases/download/updater-bootstrap-v2/lemows-update-linux-x64.zip) | `ee574309a030af7f5e672457698f0190cdef3a4445bb86ba743e0203a7861e14` |
 
 [Published game/server builds](https://github.com/taavipa/lemows-downloads/releases) use matching signed release identities. The bootstrap installs the updater first; the first managed launch downloads the game/server. Later releases keep the same bootstrap pins. Preview feed: [signed preview channel](https://raw.githubusercontent.com/taavipa/lemows-downloads/main/channels/preview.json).
 
@@ -24,8 +24,8 @@ Run this block in PowerShell as your normal Windows user:
     $lemowsTemporary = Join-Path $env:TEMP ('lemows-bootstrap-' + [guid]::NewGuid().ToString('N'))
     New-Item -ItemType Directory -Path $lemowsTemporary | Out-Null
     $lemowsArchive = Join-Path $lemowsTemporary 'lemows-update-win-x64.zip'
-    $lemowsPin = '83d06a2378cb9cc78783de12982a3dda0c507e96a1c19c2be48a2113323f2ac9'
-    Invoke-WebRequest -UseBasicParsing -Uri 'https://github.com/taavipa/lemows-downloads/releases/download/updater-bootstrap-v1/lemows-update-win-x64.zip' -OutFile $lemowsArchive
+    $lemowsPin = 'de7ab9068ec9f0540c5e7f078e49df1bc256c40fd25e42c30c5b50dcc0924e82'
+    Invoke-WebRequest -UseBasicParsing -Uri 'https://github.com/taavipa/lemows-downloads/releases/download/updater-bootstrap-v2/lemows-update-win-x64.zip' -OutFile $lemowsArchive
     if ((Get-FileHash -LiteralPath $lemowsArchive -Algorithm SHA256).Hash -ne $lemowsPin) { throw 'Bootstrap checksum mismatch' }
     Expand-Archive -LiteralPath $lemowsArchive -DestinationPath (Join-Path $lemowsTemporary 'package')
     powershell -NoProfile -ExecutionPolicy Bypass -File (Join-Path $lemowsTemporary 'package/install-windows.ps1') -Archive $lemowsArchive -Sha256 $lemowsPin
@@ -46,9 +46,9 @@ Run in Bash as the normal Linux user who will own the server. Only dependency in
     sudo apt-get install -y curl unzip ca-certificates libstdc++6 libgcc-s1 zlib1g libgomp1
     lemows_temporary=$(mktemp -d)
     lemows_archive="$lemows_temporary/lemows-update-linux-x64.zip"
-    lemows_pin=f0700f1965049d9032f28826b164a54fe41af83bee13bf0d7a049a62e1df754c
+    lemows_pin=ee574309a030af7f5e672457698f0190cdef3a4445bb86ba743e0203a7861e14
     curl -q --fail --show-error --location --proto '=https' --proto-redir '=https' \
-        'https://github.com/taavipa/lemows-downloads/releases/download/updater-bootstrap-v1/lemows-update-linux-x64.zip' \
+        'https://github.com/taavipa/lemows-downloads/releases/download/updater-bootstrap-v2/lemows-update-linux-x64.zip' \
         --output "$lemows_archive"
     printf '%s  %s\n' "$lemows_pin" "$lemows_archive" | sha256sum --check -
     unzip -q "$lemows_archive" -d "$lemows_temporary/package"
@@ -84,6 +84,8 @@ The display refreshes every second. It shows CPU (100% = one core), RAM, process
 ```
 
 `--interval` accepts 1–60 whole seconds. Redirected output and `--once` use JSON lines without terminal escape codes. Set `"language": "et"` in the local config for the Estonian terminal display. Measured tick rate is an average since startup, not a prediction performance benchmark or instantaneous frame time.
+
+If an older Linux launch record lacks the kernel process identity, let the server stop gracefully and start it through the managed wrapper before attaching the dashboard. The monitor does not guess which process owns an old PID.
 
 ## Connect, operate and configure
 
