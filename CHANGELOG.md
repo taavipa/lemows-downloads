@@ -1,6 +1,13 @@
 # Changelog
 
-## 0.1.0-preview.20261119.7 — 2026-11-19
+## 0.1.0-preview.20261120.8 — 2026-11-20
+
+- The launcher now checks and installs updates automatically. Select **Play** when it is ready to open the game menu.
+- Solo play starts with Kusti and Starter 1846 at Rappavere.
+- Steam menu options are deferred to Phase 2. Direct hosting and joining are available from the game menu.
+- Rappavere's offline Class S opponents use a trained traffic model that brakes earlier and leaves more room while racing side by side.
+
+## 0.1.0-preview.20261119.7
 
 - Updated the driving menus and Tab race roster to match the Le Mows interface design. Use the same display name in solo and multiplayer from Settings.
 - Reworked the Estonian and English starter calls to follow the race countdown. The starter report sounds on Green.
