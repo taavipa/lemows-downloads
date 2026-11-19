@@ -1,6 +1,14 @@
 # Changelog
 
-## 0.1.0-preview.20261115.6 — 2026-11-15
+## 0.1.0-preview.20261119.7 — 2026-11-19
+
+- Updated the driving menus and Tab race roster to match the Le Mows interface design. Use the same display name in solo and multiplayer from Settings.
+- Reworked the Estonian and English starter calls to follow the race countdown. The starter report sounds on Green.
+- Tuned the driving mix so the nearby engine stays clear and track ambience returns as you slow down or get off.
+- Improved AI clearance checks and added a reversing maneuver for blocked tractors.
+- Refined Starter 1846's steering and impact response. Trackside props use their normal collisions without acting as tyre support.
+
+## 0.1.0-preview.20261115.6
 
 - Added **LeMowsSetup.exe**: choose a folder and install the game with a graphical setup.
 - Added a native desktop and Start menu launcher with **Install**, **Update** and **Play**.
