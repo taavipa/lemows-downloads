@@ -4,7 +4,7 @@ Lawn-tractor racing with a rural Estonian summer setting. This repository contai
 
 ## Download and play
 
-### [Download LeMowsSetup.exe](https://github.com/taavipa/lemows-downloads/releases/download/build-preview-20261115-6/LeMowsSetup.exe)
+### [Download LeMowsSetup.exe](https://github.com/taavipa/lemows-downloads/releases/download/build-preview-20261119-7/LeMowsSetup.exe)
 
 1. Download and double-click **LeMowsSetup.exe**.
 2. Choose your language and install folder, then click **Install Le Mows**.
@@ -15,12 +15,12 @@ The launcher installs the game, checks for updates and shows download progress. 
 
 Default install folder: `%LOCALAPPDATA%\LeMows`. Re-running setup can upgrade a recognized existing installation while retaining its settings and data. English and Estonian are available in setup and the launcher.
 
-Current player build: **0.1.0-preview.20261115.6**. [Changelog](CHANGELOG.md) · [All player releases](https://github.com/taavipa/lemows-downloads/releases).
+Current player build: **0.1.0-preview.20261119.7**. [Changelog](CHANGELOG.md) · [All player releases](https://github.com/taavipa/lemows-downloads/releases).
 
 <details>
 <summary>Download verification</summary>
 
-`LeMowsSetup.exe` SHA-256: `05f044220f826e83b5b7c161a0e859e3ec9db656c4b273684d41f8dbcefeba2c`.
+`LeMowsSetup.exe` SHA-256: `5267d7b5082ba841dff2ff2add65494c7bd414df6b18476b11423734d34b731d`.
 
 The installer verifies the signed game feed and every downloaded archive/file before use. The downloaded setup is also byte-for-byte identical to the launcher file named in the signed update package.
 
@@ -28,18 +28,19 @@ The installer verifies the signed game feed and every downloaded archive/file be
 
 ## Development state
 
-**Early driving and multiplayer prototype — Phase 1 playtesting.** Updated 2026-11-15.
+**Driving and multiplayer preview — Phase 1 playtesting.** Updated 2026-11-19.
 
 | Area | Current state |
 |---|---|
 | Tractor driving | Playable prototype with custom vehicle physics; handling review continues |
-| Track | Driveable prototype race track |
+| Track | Rappavere with lap timing, starter calls and Bot practice |
 | Input and cameras | Keyboard/gamepad, chase, seat and orbit views |
 | Multiplayer | Hosting/joining implemented; online feel and performance remain under review |
 | Race control | Lap timing, race clock, standings and recovery prototype |
 | Installation and updates | Graphical Windows setup, native launcher and signed update checks |
-| HUD, art and animation | Prototype presentation; further work planned |
-| Garage/fabrication, walking, village and career | Planned gameplay; not yet playable |
+| HUD, art and animation | Live race HUD, Tab roster and current Le Mows menu presentation |
+| Workshop and walking | Starter 1846 workshop and local driving interactions available for testing |
+| Fabrication, village and career progression | Planned |
 | Persistent progression and Steam integration | Planned |
 
 The preview is for playtesting. Structured handling feedback, multiplayer smoothness/performance work and broader load testing remain open. Development screenshots and plans may include features that are not in the downloadable game yet.
@@ -58,6 +59,7 @@ Choose **Solo driving**, **Host a race**, or **Join game**. To join, enter the a
 | Orbit distance | Mouse wheel | — |
 | Look back | Hold Left Alt or middle mouse | Hold right-stick press |
 | Recovery request | Hold R | Hold D-pad Up |
+| Race standings | Tab | — |
 
 Automatic shifting is the default. Camera cycling includes chase, seat, tractor orbit and driver orbit.
 
