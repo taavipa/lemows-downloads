@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.1.0-preview.20261124.1 — 2026-11-24
+
+- Quick Race and direct multiplayer hosting offer Rappavere, Kardiranna and Tolmuste. Choose a weather preset or changing weather. Rain affects grip and leaves puddles as the ground dries.
+- Menus use live 3D backgrounds. Fuel and temperature lamps now sit inside the speedometer and show green under normal conditions. Audio settings cover menu music, in-game music and effects. Passing tractors are easier to hear.
+- Rider poses respond to cornering, acceleration and braking. Equipped headwear stays out of hood view. Clothing fits vary by outfit, and your appearance stays with your own rider and tractor in offline races.
+- Choose Off, Low, Medium or High collision damage. Starter 1846 panels can deform or detach, and punctures change how a tyre grips and rolls. Stop in the pits to refuel, replace tyres or repair damaged parts.
+- Rappavere Quick Race offers an optional AI teammate with the Class S tractor. Stop at a marked service spot, face the pit exit and switch off the engine before choosing **Driver swap**. You can request a return to the same bay. Your fuel, tyres, damage and race progress carry through both handovers.
+- Workshop fabrication uses visible tool contact, longer operations and a more forgiving accuracy gauge. The plan board shows drawings of the game’s parts and assembly references.
+- This preview updates multiplayer compatibility. Update your game before joining a host running this release.
+
 ## 0.1.0-preview.20261120.8 — 2026-11-20
 
 - The launcher now checks and installs updates automatically. Select **Play** when it is ready to open the game menu.
