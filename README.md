@@ -4,7 +4,7 @@ Lawn-tractor racing with a rural Estonian summer setting. This repository contai
 
 ## Download and play
 
-### [Download LeMowsSetup.exe](https://github.com/taavipa/lemows-downloads/releases/download/build-preview-20261120-8/LeMowsSetup.exe)
+### [Download LeMowsSetup.exe](https://github.com/taavipa/lemows-downloads/releases/download/build-preview-20261124-1/LeMowsSetup.exe)
 
 1. Download and double-click **LeMowsSetup.exe**.
 2. Choose your language and install folder, then click **Install Le Mows**.
@@ -15,7 +15,7 @@ The launcher downloads available updates automatically and shows progress. **Pla
 
 Default install folder: `%LOCALAPPDATA%\LeMows`. Re-running setup can upgrade a recognized existing installation while retaining its settings and data. English and Estonian are available in setup and the launcher.
 
-Current player build: **0.1.0-preview.20261120.8**. [Changelog](CHANGELOG.md) · [All player releases](https://github.com/taavipa/lemows-downloads/releases).
+Current player build: **0.1.0-preview.20261124.1**. [Changelog](CHANGELOG.md) · [All player releases](https://github.com/taavipa/lemows-downloads/releases).
 
 <details>
 <summary>Download verification</summary>
@@ -28,19 +28,19 @@ The installer verifies the signed game feed and every downloaded archive/file be
 
 ## Development state
 
-**Driving and multiplayer preview — Phase 1 playtesting.** Updated 2026-11-20.
+**Driving and multiplayer preview — Phase 1 playtesting.** Updated 2026-11-24.
 
 | Area | Current state |
 |---|---|
-| Tractor driving | Kusti and Starter 1846 are the default for solo play at Rappavere. Handling review continues. |
-| Track | Rappavere with lap timing, starter calls and Bot practice |
+| Tractor driving | Starter 1846 and Class S are selectable in Quick Race. Handling review continues. |
+| Tracks | Rappavere, Kardiranna and Tolmuste with timing, AI opponents and selectable weather |
 | Input and cameras | Keyboard/gamepad, chase, seat and orbit views |
 | Multiplayer | Hosting/joining implemented; online feel and performance remain under review |
-| Race control | Lap timing, race clock, standings and recovery prototype |
+| Race control | Lap timing, race clock, standings, recovery, pit service and an optional AI teammate with Class S at Rappavere |
 | Installation and updates | Graphical Windows setup, native launcher and signed update checks |
-| HUD, art and animation | Live race HUD, Tab roster and current Le Mows menu presentation |
-| Workshop and walking | Starter 1846 workshop and local driving interactions available for testing |
-| Fabrication, village and career progression | Planned |
+| HUD, art and animation | Live menu scenes, race HUD, Tab roster, rider animations and outfit customisation |
+| Workshop and walking | Walkable workshop, tool interactions and a fabrication workbench available for testing |
+| Village and career progression | Planned |
 | Persistent progression | Planned |
 | Steam integration | Scheduled for Phase 2 |
 
@@ -48,7 +48,7 @@ The preview is for playtesting. Structured handling feedback, multiplayer smooth
 
 ## Play modes and controls
 
-Choose **Solo driving**, **Host a race**, or **Join game** in the game menu. To join, enter the address provided by your host. Everyone in the same session needs a matching player build.
+Choose **Quick race** in the game menu for an offline race. Choose **Race online** to host or join using a network address. Everyone in the same session needs a matching player build.
 
 | Action | Keyboard/mouse | Xbox-style controller |
 |---|---|---|
@@ -62,7 +62,7 @@ Choose **Solo driving**, **Host a race**, or **Join game** in the game menu. To 
 | Recovery request | Hold R | Hold D-pad Up |
 | Race standings | Tab | — |
 
-Automatic shifting is the default. Camera cycling includes chase, seat, tractor orbit and driver orbit.
+Camera cycling includes chase, hood, seat, tractor orbit and driver orbit.
 
 ## Updates and recovery
 
