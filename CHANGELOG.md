@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.0-preview.20261125.1 — 2026-11-25
+
+- The engine stays clearer in the seat and chase views. Grass, gravel and asphalt roll more quietly, a slipping wheel builds into a skid, and small bumps make a softer thud. Passing tractors keep their distinct engine sound.
+- Rain and wind sit behind the engine while driving and return to their outdoor levels when the engine stops or the driver steps off.
+
 ## 0.1.0-preview.20261124.3 — 2026-11-24
 
 - Start or continue a career in Rappavere village. Walk between the farmhouse, shop, workshop and village hall. Buy supplies, build the Starter conversion and enter weekly events from the same save.
