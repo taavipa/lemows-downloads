@@ -4,7 +4,7 @@ Lawn-tractor racing with a rural Estonian summer setting. This repository contai
 
 ## Download and play
 
-### [Download LeMowsSetup.exe](https://github.com/taavipa/lemows-downloads/releases/download/build-preview-20261125-1/LeMowsSetup.exe)
+### [Download LeMowsSetup.exe](https://github.com/taavipa/lemows-downloads/releases/download/build-preview-20261125-2/LeMowsSetup.exe)
 
 1. Download and double-click **LeMowsSetup.exe**.
 2. Choose your language and install folder, then click **Install Le Mows**.
@@ -15,7 +15,7 @@ The launcher downloads available updates automatically and shows progress. **Pla
 
 Default install folder: `%LOCALAPPDATA%\LeMows`. Re-running setup can upgrade a recognized existing installation while retaining its settings and data. English and Estonian are available in setup and the launcher.
 
-Current player build: **0.1.0-preview.20261125.1**. [Changelog](CHANGELOG.md) · [All player releases](https://github.com/taavipa/lemows-downloads/releases).
+Current player build: **0.1.0-preview.20261125.2**. [Changelog](CHANGELOG.md) · [All player releases](https://github.com/taavipa/lemows-downloads/releases).
 
 <details>
 <summary>Download verification</summary>
