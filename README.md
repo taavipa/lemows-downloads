@@ -4,7 +4,7 @@ Lawn-tractor racing with a rural Estonian summer setting. This repository contai
 
 ## Download and play
 
-### [Download LeMowsSetup.exe](https://github.com/taavipa/lemows-downloads/releases/download/build-preview-20261124-1/LeMowsSetup.exe)
+### [Download LeMowsSetup.exe](https://github.com/taavipa/lemows-downloads/releases/download/build-preview-20261124-3/LeMowsSetup.exe)
 
 1. Download and double-click **LeMowsSetup.exe**.
 2. Choose your language and install folder, then click **Install Le Mows**.
@@ -15,12 +15,12 @@ The launcher downloads available updates automatically and shows progress. **Pla
 
 Default install folder: `%LOCALAPPDATA%\LeMows`. Re-running setup can upgrade a recognized existing installation while retaining its settings and data. English and Estonian are available in setup and the launcher.
 
-Current player build: **0.1.0-preview.20261124.1**. [Changelog](CHANGELOG.md) · [All player releases](https://github.com/taavipa/lemows-downloads/releases).
+Current player build: **0.1.0-preview.20261124.3**. [Changelog](CHANGELOG.md) · [All player releases](https://github.com/taavipa/lemows-downloads/releases).
 
 <details>
 <summary>Download verification</summary>
 
-`LeMowsSetup.exe` SHA-256: `ff2d1e397c39eb851e91698274becde8528466778fe1a071a22de04a484bba04`.
+`LeMowsSetup.exe` SHA-256: `121944f7a55c55ae6692dc15b1a19704f0bb88ca024cbc44364a840bf6455106`.
 
 The installer verifies the signed game feed and every downloaded archive/file before use. The downloaded setup is also byte-for-byte identical to the launcher file named in the signed update package.
 
@@ -28,27 +28,27 @@ The installer verifies the signed game feed and every downloaded archive/file be
 
 ## Development state
 
-**Driving and multiplayer preview — Phase 1 playtesting.** Updated 2026-11-24.
+**Driving, village career and workshop preview.** Updated 2026-11-24.
 
 | Area | Current state |
 |---|---|
-| Tractor driving | Starter 1846 and Class S are selectable in Quick Race. Handling review continues. |
-| Tracks | Rappavere, Kardiranna and Tolmuste with timing, AI opponents and selectable weather |
+| Tractor driving | Kusti and Starter 1846 are the default for solo play at Rappavere. Handling review continues. |
+| Track | Rappavere, Kardiranna and Tolmuste, with weather, lap timing and practice opponents |
 | Input and cameras | Keyboard/gamepad, chase, seat and orbit views |
-| Multiplayer | Hosting/joining implemented; online feel and performance remain under review |
-| Race control | Lap timing, race clock, standings, recovery, pit service and an optional AI teammate with Class S at Rappavere |
+| Multiplayer | Direct hosting, joining and endurance crew handovers |
+| Race control | Lap timing, standings, steward penalties and pit service |
 | Installation and updates | Graphical Windows setup, native launcher and signed update checks |
-| HUD, art and animation | Live menu scenes, race HUD, Tab roster, rider animations and outfit customisation |
-| Workshop and walking | Walkable workshop, tool interactions and a fabrication workbench available for testing |
-| Village and career progression | Planned |
-| Persistent progression | Planned |
+| HUD, art and animation | Live race HUD, Tab roster and current Le Mows menu presentation |
+| Workshop and walking | Work on the Starter 1846 in the walkable garage |
+| Fabrication, village and career progression | Village shop, workshop, donor conversion and weekly events |
+| Persistent progression | Local career, purchases, workshop stock and saved appearance |
 | Steam integration | Scheduled for Phase 2 |
 
 The preview is for playtesting. Structured handling feedback, multiplayer smoothness/performance work and broader load testing remain open. Development screenshots and plans may include features that are not in the downloadable game yet.
 
 ## Play modes and controls
 
-Choose **Quick race** in the game menu for an offline race. Choose **Race online** to host or join using a network address. Everyone in the same session needs a matching player build.
+Choose **Continue career** to visit the village or **Quick race** to start driving. Open **Online** to host a race or join the address provided by your host. Everyone in the same session needs a matching player build.
 
 | Action | Keyboard/mouse | Xbox-style controller |
 |---|---|---|
@@ -62,7 +62,9 @@ Choose **Quick race** in the game menu for an offline race. Choose **Race online
 | Recovery request | Hold R | Hold D-pad Up |
 | Race standings | Tab | — |
 
-Camera cycling includes chase, hood, seat, tractor orbit and driver orbit.
+The belt variator adjusts the drive ratio as the tractor accelerates. Camera cycling includes chase, seat, tractor orbit and driver orbit.
+
+For an online driver swap, park in a marked pit bay, switch off the engine and select the other driver in the pit menu. A teammate with a separate tractor must also park and accept retiring that entry. After the timed handover, the incoming driver controls the same tractor. The team keeps its laps, fuel, tyres and damage.
 
 ## Updates and recovery
 
