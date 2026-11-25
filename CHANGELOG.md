@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.0-preview.20261125.2 — 2026-11-25
+
+- First-person fabrication now shows the tool with hands and sleeves hidden, including during paintwork and donor drilling.
+- The MIG arc starts at the visible nozzle and follows the seam.
+
 ## 0.1.0-preview.20261125.1 — 2026-11-25
 
 - The engine stays clearer in the seat and chase views. Grass, gravel and asphalt roll more quietly, a slipping wheel builds into a skid, and small bumps make a softer thud. Passing tractors keep their distinct engine sound.
